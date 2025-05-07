@@ -1,0 +1,15 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    clima-{{ciudad}}
+{% endblock %}
+
+{% block body %}
+
+    <h1>ciudad: {{ciudad}}</h1>
+    <h3>temperatura: {{data.temperature}}</h3>
+    <h3>velocidad del viento: {{data.windspeed}}</h3>
+
+
+    
+{% endblock %}

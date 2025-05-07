@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block title %}
+    Inicio
+{% endblock %}
+
+{% block body %}
+<h1>inicio</h1>
+<ul>
+   ciudades: 
+{%if ciudades %}
+    {%for ciudad in ciudades %}
+     <li>
+        <a href="/clima?ciudad={{ciudad}}">{{ciudad}}</a>
+    </li>
+    {% endfor %}
+
+{% endif %}
+
+</ul>
+
+
+    
+{% endblock %}
